@@ -9,7 +9,7 @@ class Tile extends Component {
         <img className='Tile__image' src={src} alt='dynamic'/>
         <div className='Tile__body'>
           <button className='mr-1 Tile__body-like-button'>
-            <span role='img' aria-label='likes'>👍</span> {likes}
+            <span role='img' aria-label='likes'>👍 +2</span> {likes}
           </button>
           <button className='mr-1 Tile__body-comment-button'>
             <span role='img' aria-label='comments'>💬</span> {comments.length}
