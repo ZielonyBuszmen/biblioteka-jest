@@ -1,0 +1,8 @@
+.Comment {
+  display: flex;
+}
+
+.Comment .author {
+  font-style: oblique;
+  font-weight: bold;
+}

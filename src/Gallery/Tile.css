@@ -1,0 +1,71 @@
+.Tile {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+  margin-bottom: 20px;
+  flex: 0 0 calc(33.333333% - 30px);
+  max-width: calc(33.333333% - 30px);
+  width: 100%;
+  margin-right: 15px;
+  margin-left: 15px;
+}
+
+.Tile:hover {
+  filter: brightness(110%) saturate(1.2);
+  border: 1px solid rgba(0, 0, 0, 0.33);
+  user-select: none;
+  cursor: pointer;
+}
+
+.Tile__image {
+  width: 100%;
+  border-top-left-radius: calc(0.25rem - 1px);
+  border-top-right-radius: calc(0.25rem - 1px);
+}
+
+.Tile__body {
+  flex: 1 1 auto;
+  padding: 1.25rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.Tile__body-like-button {
+  padding: 0.25rem 0.5rem;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  border-radius: 0.2rem;
+  color: #000d9c;
+  background-color: rgba(0, 124, 255, 0.14);
+  border-color: #3097ff;
+}
+
+.Tile__body-comment-button {
+  padding: 0.25rem 0.5rem;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  border-radius: 0.2rem;
+  color: black;
+  background-color: #fff;
+  border-color: #656258;
+}
+
+.Tile__body-date {
+  flex-grow: 20;
+  text-align: right;
+  color: #646464;
+}
+
+.Tile__body-likes {
+  color: #4b4b4b;
+  padding: 0 5px;
+}
