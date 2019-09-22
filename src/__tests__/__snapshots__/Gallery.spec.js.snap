@@ -1,0 +1,72 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Gallery should render 1`] = `
+<div
+  className="row my-4"
+>
+  <span>
+    Obrazek:
+  </span>
+  <div
+    className="Tile"
+    onClick={[Function]}
+  >
+    <img
+      alt="dynamic"
+      className="Tile__image"
+      src="photo.jpg"
+    />
+    <div
+      className="Tile__body"
+    >
+      <button
+        className="mr-1 Tile__body-like-button"
+      >
+        <span
+          aria-label="likes"
+          role="img"
+        >
+          👍 +2
+        </span>
+         
+        13
+      </button>
+      <button
+        className="mr-1 Tile__body-comment-button"
+      >
+        <span
+          aria-label="comments"
+          role="img"
+        >
+          💬
+        </span>
+         
+        0
+      </button>
+      <small
+        className="Tile__body-date"
+      >
+        20 July
+      </small>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Gallery should render with enzyme 1`] = `
+<div
+  className="row my-4"
+>
+  <span>
+    Obrazek:
+  </span>
+  <Tile
+    comments={Array []}
+    date="20 July"
+    key="0"
+    likes={13}
+    onClick={[Function]}
+    src="photo.jpg"
+  />
+</div>
+`;

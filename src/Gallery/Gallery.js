@@ -19,10 +19,12 @@ class Gallery extends Component {
       />
     );
   };
+  
 
   render() {
     return (
       <div className='row my-4'>
+        <span>Obrazek:</span>
         {this.imageListRenderer(this.props.imageList)}
       </div>
     );
